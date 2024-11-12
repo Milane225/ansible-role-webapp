@@ -2,7 +2,7 @@
 - name: Copy website file template
   template:
     src: index.html.j2
-    dest: /home/admin/index.html
+    dest: "{{ host_volume }}"
 - name: Create Apache container
   docker_container:
     name: webapp
@@ -10,4 +10,4 @@
     ports:
       - "80:80"
     volumes: 
-      - /home/admin/index.html:/usr/local/apache2/htdocs/index.html
+      - "{{ host_volume }}":"{{ container_volume }}"
