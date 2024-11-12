@@ -4,7 +4,7 @@ Ce rôle Ansible installe un conteneur Apache et déploie un site web en copiant
 
 ## Prérequis
 
-- Ansible 2.9 ou version ultérieure.
+- Ansible 2.0 ou version supérieure.
 - Docker doit être installé sur la machine cible pour exécuter le conteneur Apache.
 
 ## Variables
