@@ -1,4 +1,7 @@
 ---
 ansible_user: admin
 ansible_password: admin
+container_name: webapp
 apache_image: httpd
+host_volume: "/home/admin/index.html"
+container_volume: "/usr/local/apache2/htdocs/index.html"
