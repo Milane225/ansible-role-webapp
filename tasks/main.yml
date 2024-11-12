@@ -6,7 +6,7 @@
 - name: Create Apache container
   docker_container:
     name: webapp
-    image: httpd
+    image: "{{ system_user }}"
     ports:
       - "80:80"
     volumes: 
