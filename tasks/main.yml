@@ -5,7 +5,7 @@
     dest: "{{ host_volume }}"
 - name: Create Apache container
   docker_container:
-    name: webapp
+    name: "{{ container_name }}"
     image: "{{ apache_image }}"
     ports:
       - "80:80"
